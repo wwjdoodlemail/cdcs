@@ -1,0 +1,32 @@
+{
+"manifest_version": 2,
+"name": "周期检测控制系统",
+"version": "0.0.1",
+
+"browser_action":{
+},
+
+"background": {
+    "scripts": ["jquery-3.3.1.js", "utils.js", "db.js", "cdcs.js", "lais.js", "server.js"]
+},
+
+"permissions": [
+    "activeTab",
+    "cookies",
+    "tabs",
+    "storage",
+    "webRequest", 
+    "webRequestBlocking", 
+    "<all_urls>",
+
+    "system.cpu"
+ ],
+
+
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+
+"web_accessible_resources": [
+  "index.html"
+]
+
+}
